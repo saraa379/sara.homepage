@@ -1,6 +1,6 @@
 import {TAB_CLICKED} from '../actions/constants.js';
 const initialState = {
-	currentTab: "Home"
+	currentTab: "landingpage"
 }
 let tabReducer = (state = initialState, action) => {
 	switch( action.type ) {
