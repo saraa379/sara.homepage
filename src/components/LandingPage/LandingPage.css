@@ -2,6 +2,8 @@
 .LandingPage {
   width: 100%;
   height: 100%;
+  background-color: #101010;
+  /*
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10,8 +12,63 @@
         rgba(10, 69, 220, 0.2),
         rgba(10, 69, 220, 0.2)
       ),
-      url(/img/space3.jpg);
+      url(/img/space3.jpg);*/
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.LandingPage h1 {
+  color: #b5b0a5;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: 'Dorsa', sans-serif;
+}
+.LandingPage p {
+  color: #354b4e;
+  text-align: center;
+  font-family: "Museo";
+}
+.LandingPage .circle {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  animation-name: animationLP;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+}
+.LandingPage .text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@keyframes animationLP {
+  0% {
+    background-color: #101010;
+    height: 0;
+    width: 0;
+  }
+  100% {
+    background-color: black;
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/*Media queries*/
+@media (max-width: 480px) {
+  .LandingPage .circle {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media (max-width: 300px) {
+  .LandingPage .circle {
+    height: 200px;
+    width: 200px;
+  }
 }

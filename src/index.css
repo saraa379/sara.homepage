@@ -3,6 +3,11 @@
   src:
     url(/fonts/GothamLightRegular.otf) format('opentype');
 }
+@font-face {
+  font-family: 'Otto';
+  src:
+    url(/fonts/Otto.ttf) format('truetype');
+}
 * {
     box-sizing: border-box;
     margin: 0;
