@@ -16,6 +16,10 @@ class LandingPage extends Component {
 		return (
 			<div className="innerWrap LandingPage">
 
+					<div id='stars'></div>
+					<div id='stars2'></div>
+					<div id='stars3'></div>
+
 					<div className="circle">
 							<div className="text">
 									<h1>Sarantsetseg Hedenfalk</h1>
