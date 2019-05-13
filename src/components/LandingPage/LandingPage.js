@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import './LandingPage.css';
 import {actionClickTab} from '../../actions/menuActions.js';
-import {LANDINGP_MENU} from '../constants.js';
+import {LANDINGP_MENU, HOME_PATH} from '../constants.js';
 import {actionClickLang} from '../../actions/languageAction.js';
 
 
@@ -30,15 +31,23 @@ class LandingPage extends Component {
 					<div className="circle">
 
 							<div className="text">
-									<h1>Sarantsetseg Hedenfalk</h1>
-									<p>Welcome to my homepage!</p>
+									<h2>Hi, my name is Sara.</h2>
+									<h2>I am a web developer.</h2>
+									<p>Welcome to my web portfolia page!</p>
 
 									<div className="Language">
-										<div className={(currentLanguage === "swe") ? "Swedish SweCurrent" : "Swedish"}
-												 onClick={() => this.langClick("swe")}></div>
-										<div className={(currentLanguage === "eng") ? "English EngCurrent" : "English"}
-										     onClick={() => this.langClick("eng")}></div>
+										  <Link to={HOME_PATH}>
+													<div className={(currentLanguage === "swe") ? "Swedish SweCurrent" : "Swedish"}
+													     onClick={() => this.langClick("swe")}>
+												  </div>
+											</Link>
+											<Link to={HOME_PATH}>
+													<div className={(currentLanguage === "eng") ? "English EngCurrent" : "English"}
+													     onClick={() => this.langClick("eng")}>
+													</div>
+											</Link>
 								  </div>
+
 							</div>
 
 

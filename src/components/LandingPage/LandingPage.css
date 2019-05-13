@@ -1,4 +1,4 @@
-/**/
+/*General styles*/
 .LandingPage {
   width: 100%;
   height: 100%;
@@ -90,16 +90,14 @@
   margin: 0 auto;
   margin-top: 10%;
 }
-.LandingPage h1 {
+.LandingPage h2 {
   /*color: #b5b0a5;*/
-  color: white;
+  color: #cacaca;
   text-align: center;
-  text-transform: uppercase;
   font-size: 2rem;
-  font-family: 'Open Sans Condensed', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   font-weight: 100;
   text-decoration: none;
-  text-shadow: 0 0 5px rgba(21,171,195,0.7);
   animation-name: animationH1;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -116,13 +114,8 @@
   /*color: #354b4e;*/
   color: rgba(21,171,195,1.0);
   text-align: center;
-  text-transform: uppercase;
   font-weight: 100;
-  text-shadow: 0 0 5px rgba(21,171,195,0.7);
-  background: -webkit-linear-gradient(white, #354b4e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "lato", sans-serif;
+  font-family: 'GothamLightRegular';
   font-size: 1rem;
   animation-name: animationP;
   animation-duration: 2s;
@@ -151,55 +144,8 @@
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  /*
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-image: linear-gradient(
-        rgba(10, 69, 220, 0),
-        rgba(10, 69, 220, 0)
-      ),
-      url(/img/space4.jpg);*/
-/*
-  box-shadow: 0 0 15px rgba(0,0,0,0.5),
-              0 0 30px rgba(0,0,0,0.5),
-              0 0 45px rgba(0,0,0,0.5),
-              0 0 60px rgba(0,0,0,0.5),
-              0 0 10px rgba(0,0,0,0.5);*/
- /*
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate;*/
 }
-/*
-@-webkit-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #101010, 0 0 70px #101010, 0 0 80px #101010, 0 0 100px #101010, 0 0 150px #101010;
-  }
-  to {
-    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #101010, 0 0 35px #101010, 0 0 40px #101010, 0 0 50px #101010, 0 0 75px #101010;
-  }
-}
-@-moz-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #101010, 0 0 70px #101010, 0 0 80px #101010, 0 0 100px #101010, 0 0 150px #101010;
-  }
-  to {
-    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #101010, 0 0 35px #101010, 0 0 40px #101010, 0 0 50px #101010, 0 0 75px #101010;
-  }
-}
-@keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #101010, 0 0 70px #101010, 0 0 80px #101010, 0 0 100px #101010, 0 0 150px #101010;
-  }
-  to {
-    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #101010, 0 0 35px #101010, 0 0 40px #101010, 0 0 50px #101010, 0 0 75px #101010;
-  }
-}
-*/
+
 @keyframes animationLP {
   0% {
     width: 0;
@@ -220,40 +166,43 @@
     align-items: center;
     margin-top: 30px;
     width: 100%;
+    margin-right: 0;
   }
   .Language div {
     width: 40px;
     height: 26px;
-    margin-right: 10px;
     background-position: center center;
     background-size: cover;
     cursor: pointer;
   }
   .Language .Swedish {
+    margin-right: 10px;
+    border: 1px solid #354b4e;
     background-image: linear-gradient(
-          rgba(10, 69, 220, 0.4),
-          rgba(10, 69, 220, 0.4)
+          rgba(16, 4, 28, 0.5),
+          rgba(16, 4, 28, 0.5)
         ),
         url(/img/swe.png);
   }
   .Language .Swedish:hover {
     background-image: linear-gradient(
-          rgba(10, 69, 220, 0.1),
-          rgba(10, 69, 220, 0.1)
+          rgba(16, 4, 28, 0.1),
+          rgba(16, 4, 28, 0.1)
         ),
         url(/img/swe.png);
   }
   .Language .English {
+    border: 1px solid #354b4e;
     background-image: linear-gradient(
-          rgba(10, 69, 220, 0.4),
-          rgba(10, 69, 220, 0.4)
+          rgba(16, 4, 28, 0.5),
+          rgba(16, 4, 28, 0.5)
         ),
         url(/img/eng.png);
   }
   .Language .English:hover {
     background-image: linear-gradient(
-          rgba(10, 69, 220, 0.1),
-          rgba(10, 69, 220, 0.1)
+          rgba(16, 4, 28, 0.1),
+          rgba(16, 4, 28, 0.1)
         ),
         url(/img/eng.png);
   }

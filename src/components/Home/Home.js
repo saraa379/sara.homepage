@@ -11,13 +11,14 @@ class Home extends Component {
 	}
 	render() {
 		const {currentLanguage} = this.props.currentLanguage;
-		console.log("Current language un home: " + currentLanguage);
+		console.log("Current language in home: " + currentLanguage);
 
 		return (
 			<div className="innerWrap">
 
 					<div className={(currentLanguage === "swe") ? "HomeWrap HomeSwe" : "displayNone"}>
 							<div className="Hero">
+							home swe
 							</div>
 					</div>
 

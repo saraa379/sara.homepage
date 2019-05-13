@@ -23,46 +23,4 @@ header {
       height: 25px;
     }
 
-  /*Language Section styles*/
-  .Language {
-    display: inline-flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 10px;
-  }
-  .Language div {
-    width: 25px;
-    height: 15px;
-    margin-right: 3px;
-    background-position: center center;
-    background-size: cover;
-  }
-  .Language .Swedish {
-    background-image: linear-gradient(
-          rgba(10, 69, 220, 0.4),
-          rgba(10, 69, 220, 0.4)
-        ),
-        url(/img/swe.png);
-  }
-  .Language .SweCurrent {
-    background-image: linear-gradient(
-          rgba(10, 69, 220, 0),
-          rgba(10, 69, 220, 0)
-        ),
-        url(/img/swe.png);
-  }
-  .Language .English {
-    background-image: linear-gradient(
-          rgba(10, 69, 220, 0.4),
-          rgba(10, 69, 220, 0.4)
-        ),
-        url(/img/eng.png);
-  }
-  .Language .EngCurrent {
-    background-image: linear-gradient(
-          rgba(10, 69, 220, 0),
-          rgba(10, 69, 220, 0)
-        ),
-        url(/img/eng.png);
-  }
+  
