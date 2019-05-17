@@ -24,16 +24,11 @@ class LandingPage extends Component {
 		return (
 			<div className="innerWrap LandingPage">
 
-					<div id='stars'></div>
-					<div id='stars2'></div>
-					<div id='stars3'></div>
-
 					<div className="circle">
 
 							<div className="text">
 									<h2>Hi, my name is Sara.</h2>
-									<h2>I am a web developer.</h2>
-									<p>Welcome to my web portfolia page!</p>
+									<p>I am a web developer. Welcome to my web portfolia page!</p>
 
 									<div className="Language">
 										  <Link to={HOME_PATH}>

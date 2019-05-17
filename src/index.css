@@ -4,6 +4,11 @@
     url(/fonts/GothamLightRegular.otf) format('opentype');
 }
 @font-face {
+  font-family: 'LatoBold';
+  src:
+    url(/fonts/LatoBold.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Otto';
   src:
     url(/fonts/Otto.ttf) format('truetype');

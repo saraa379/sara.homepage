@@ -2,7 +2,7 @@
 .LandingPage {
   width: 100%;
   height: 100%;
-  background-color: #101010;
+  background-color: #2a2a2a;
   position: relative;
   overflow: hidden;
   /*
@@ -85,55 +85,10 @@
 }
 
 /*Circle styles*/
-.LandingPage .text {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 10%;
-}
-.LandingPage h2 {
-  /*color: #b5b0a5;*/
-  color: #cacaca;
-  text-align: center;
-  font-size: 2rem;
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-weight: 100;
-  text-decoration: none;
-  animation-name: animationH1;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-@keyframes animationH1 {
-  0% {
-    font-size: 0.8rem;
-  }
-  100% {
-    font-size: 2rem;
-  }
-}
-.LandingPage p {
-  /*color: #354b4e;*/
-  color: rgba(21,171,195,1.0);
-  text-align: center;
-  font-weight: 100;
-  font-family: 'GothamLightRegular';
-  font-size: 1rem;
-  animation-name: animationP;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-@keyframes animationP {
-  0% {
-    font-size: 0.5rem;
-  }
-  100% {
-    font-size: 1rem;
-  }
-}
 .LandingPage .circle {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  background-color: black;
+  width: 60%;
+  border-radius: 45%;
+  background-color: transparent;
   animation-name: animationLP;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -154,6 +109,51 @@
   100% {
     width: 400px;
     height: 400px;
+  }
+}
+
+.LandingPage .text {
+  width: 80%;
+  margin: 0 auto;
+}
+.LandingPage h2 {
+  /*color: #b5b0a5;*/
+  color: #cacaca;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'LatoBold', 'Open Sans', sans-serif;
+  text-decoration: none;
+  /*
+  animation-name: animationH1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;*/
+}
+@keyframes animationH1 {
+  0% {
+    font-size: 0.8rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+.LandingPage p {
+  /*color: #354b4e;*/
+  color: #8a8a8a;
+  text-align: center;
+  font-weight: 100;
+  font-family: 'GothamLightRegular';
+  font-size: 1.2rem;
+  animation-name: animationP;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+@keyframes animationP {
+  0% {
+    font-size: 0.5rem;
+  }
+  100% {
+    font-size: 1rem;
   }
 }
 
