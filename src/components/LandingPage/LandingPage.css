@@ -29,7 +29,7 @@
   background-color: transparent;
   animation-name: animationLP;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  /*animation-timing-function: ease-out;*/
   display: flex;
   align-items: center;
   left: 50%;
@@ -78,41 +78,40 @@
 .LandingPage p {
   /*color: #354b4e;*/
   color: #8a8a8a;
-  text-align: center;
+  text-align: left;
   font-weight: 100;
   font-family: 'GothamLightRegular';
   font-size: 1.2rem;
+  letter-spacing: .1rem;
+  /*animation: typing 3.5s steps(40, end);*/
   /*animation-name: animationP;
   animation-duration: 2s;
   animation-timing-function: ease-out;*/
 }
-@keyframes animationP {
-  0% {
-    font-size: 0.5rem;
-  }
-  100% {
-    font-size: 1rem;
-  }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 /*Typer animation*/
-.typer {
+.Typist {
   position: relative;
+  overflow: hidden;
 }
-.typer::after {
+.Typist::after {
   content: "";
   position: absolute;
-  width: 4%;
+  width: 20px;
   height: 20px;
   border-bottom: 2px solid #8a8a8a;
-  animation: blink 0.9s infinite ease;
+  animation: blink 0.5s infinite;
 }
 @keyframes blink {
   0% {
-    opacity: 0;
+    border-bottom: 2px solid transparent;
   }
   100% {
-    opacity: 1;
+    border-bottom: 2px solid #8a8a8a;
   }
 }
 

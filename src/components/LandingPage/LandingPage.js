@@ -5,14 +5,15 @@ import './LandingPage.css';
 import {actionClickTab} from '../../actions/menuActions.js';
 import {LANDINGP_MENU, HOME_PATH} from '../constants.js';
 import {actionClickLang} from '../../actions/languageAction.js';
+import Typist from 'react-typist';
 
 //Global variables for typing function
-const texts = ['I', 'am', 'a', 'web', 'developer.', 'Welcome', 'to', 'my', 'web', 'portfolia', 'page.'];
-let count = 0;
-let index = 0;
-let currentText = '';
-let letter = '';
-let sentence = '';
+var i = 0;
+var txt = "I am a web developer. Welcome to my portfolia page! Here you can check out my skills, education and experience.";
+var speed = 5000;
+var temp = "";
+
+//var typed = new Typed(".element", options);
 
 class LandingPage extends Component {
 	constructor(props) {
@@ -27,37 +28,25 @@ class LandingPage extends Component {
 
 	componentDidMount(){
 		this.props.actionClickTab(LANDINGP_MENU);
-		this.timerID = setInterval(
-      () => this.type(), 400
-    );
+		/*
+		for (var i = 0; i < txt.length; i++) {
+			setTimeout(this.type(i), speed);
+		}*/
 	}
 
 	//switches current language
-	type = () => {
-			if (count === texts.length) {
-				count = 0;
-			}
-
-			currentText = texts[count];
-			letter = currentText.slice(0, ++index);
-			//let newSentence = sentence + ' ' + letter;
-			//sentence = newSentence;
-			//this.updateContent(sentence);
-
-			if (letter.length === currentText.length) {
-				count++;
-				index = 0;
-			}
-			//setTimeout(type, 400);
+	type = (index) => {
+			temp = temp + txt.charAt(index);
+			console.log("content: " + temp);
+			this.updateContent(temp);
 	}
 
-	componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
 
 	render() {
 		const {currentLanguage} = this.props.currentLanguage;
 		const { content } = this.state;
+
+
 
 		return (
 			<div className="innerWrap LandingPage">
@@ -65,8 +54,12 @@ class LandingPage extends Component {
 					<div className="circle">
 
 							<div className="text">
-									<h2>Hi, my name is Sara.</h2>
-									<p className="typer">{content}</p>
+
+									<Typist className="typer">
+										<h2>Hi, my name is Sara.</h2>
+										<Typist.Delay ms={500} />
+						        <p className="typer">I am a web developer. Welcome to my portfolia page! Here you can check out my skills, education and experience.</p>
+						      </Typist>
 
 									<div className="Language">
 										  <Link to={HOME_PATH}>
