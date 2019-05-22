@@ -7,13 +7,6 @@ import {LANDINGP_MENU, HOME_PATH} from '../constants.js';
 import {actionClickLang} from '../../actions/languageAction.js';
 import Typist from 'react-typist';
 
-//Global variables for typing function
-var i = 0;
-var txt = "I am a web developer. Welcome to my portfolia page! Here you can check out my skills, education and experience.";
-var speed = 5000;
-var temp = "";
-
-//var typed = new Typed(".element", options);
 
 class LandingPage extends Component {
 	constructor(props) {
@@ -28,17 +21,6 @@ class LandingPage extends Component {
 
 	componentDidMount(){
 		this.props.actionClickTab(LANDINGP_MENU);
-		/*
-		for (var i = 0; i < txt.length; i++) {
-			setTimeout(this.type(i), speed);
-		}*/
-	}
-
-	//switches current language
-	type = (index) => {
-			temp = temp + txt.charAt(index);
-			console.log("content: " + temp);
-			this.updateContent(temp);
 	}
 
 
@@ -55,11 +37,31 @@ class LandingPage extends Component {
 
 							<div className="text">
 
-									<Typist className="typer">
-										<h2>Hi, my name is Sara.</h2>
-										<Typist.Delay ms={500} />
-						        <p className="typer">I am a web developer. Welcome to my portfolia page! Here you can check out my skills, education and experience.</p>
-						      </Typist>
+
+										<h2 className="typer">
+											<Typist className="typer" cursor={{ show: true, hideWhenDone: true, element: '_' }}>
+													Hi, my name is Sara.
+											</Typist>
+										</h2>
+
+						        <p className="typer p1">
+												<Typist className="typer" cursor={{ show: true, element: '_', hideWhenDone: true }}>
+													<Typist.Delay ms={2900} />
+													I am a web developer. Welcome to my
+								      	</Typist>
+										</p>
+										<p className="typer p2">
+												<Typist className="typer" cursor={{ show: true, element: '_', hideWhenDone: true }}>
+													<Typist.Delay ms={6200} />
+														portfolia page! Here you can check out my
+								      	</Typist>
+										</p>
+										<p className="typer p3">
+												<Typist className="typer" cursor={{ show: true, element: '_' }}>
+													<Typist.Delay ms={10000} />
+														skills, education and experience.
+								      	</Typist>
+										</p>
 
 									<div className="Language">
 										  <Link to={HOME_PATH}>

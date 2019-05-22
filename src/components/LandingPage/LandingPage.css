@@ -5,20 +5,6 @@
   background-color: #181818;
   position: relative;
   overflow: hidden;
-  /*
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  background-color: #101010;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: linear-gradient(
-        rgba(16, 16, 16, 0.8),
-        rgba(16, 16, 16, 0.8)
-      ),
-      url(/img/space23.jpg);*/
-
-  /*text-shadow: 0 0 5px rgba(21,171,195,0.7*/
 }
 
 
@@ -29,7 +15,6 @@
   background-color: transparent;
   animation-name: animationLP;
   animation-duration: 1s;
-  /*animation-timing-function: ease-out;*/
   display: flex;
   align-items: center;
   left: 50%;
@@ -39,81 +24,57 @@
   top: 50%;
 }
 
-@keyframes animationLP {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  100% {
-    width: 400px;
-    height: 400px;
-  }
-}
-
 .LandingPage .text {
   width: 80%;
   margin: 0 auto;
 }
 .LandingPage h2 {
-  /*color: #b5b0a5;*/
+  width: 260px;
+  margin: 0 auto;
   color: #cacaca;
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: 'LatoBold', 'Open Sans', sans-serif;
   text-decoration: none;
-  /*
-  animation-name: animationH1;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;*/
 }
-@keyframes animationH1 {
-  0% {
-    font-size: 0.8rem;
-  }
-  100% {
-    font-size: 2rem;
-  }
-}
+
 .LandingPage p {
-  /*color: #354b4e;*/
   color: #8a8a8a;
+  margin: 0 auto;
   text-align: left;
-  font-weight: 100;
   font-family: 'GothamLightRegular';
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: .1rem;
-  /*animation: typing 3.5s steps(40, end);*/
-  /*animation-name: animationP;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;*/
 }
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.LandingPage .p1 {
+  width: 372px;
+}
+.LandingPage .p2 {
+  width: 420px;
+}
+.LandingPage .p3 {
+  width: 317px;
 }
 
 /*Typer animation*/
-.Typist {
-  position: relative;
+.typer {
   overflow: hidden;
 }
-.Typist::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-bottom: 2px solid #8a8a8a;
-  animation: blink 0.5s infinite;
+.Typist .Cursor {
+  display: inline-block;
+  color: #8a8a8a;
 }
+  .Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite;
+  }
+
 @keyframes blink {
-  0% {
-    border-bottom: 2px solid transparent;
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
   }
-  100% {
-    border-bottom: 2px solid #8a8a8a;
-  }
-}
 
 /*Language Section styles*/
   .Language {
