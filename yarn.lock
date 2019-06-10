@@ -7393,9 +7393,10 @@ react-scripts@3.0.0:
   optionalDependencies:
     fsevents "2.0.6"
 
-react-typist@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/react-typist/-/react-typist-2.0.5.tgz#9830395a73a03e6368e1392ecb98edaa3a648e44"
+react-typist-updated@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/react-typist-updated/-/react-typist-updated-2.0.6.tgz#207b2dd1315bdd246237d0d199fd557ac6ca801c"
+  integrity sha512-m1Aw2iWlLIxrE9zSWHoXYPZBUt4yDuk1p11J8QT6QqgHMrw0yxRaaepzPOzujcHcW6wBzRBbSCJAMKo0Bx+09A==
   dependencies:
     prop-types "^15.5.10"
 

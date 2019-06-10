@@ -5,18 +5,18 @@ import './LandingPage.css';
 import {actionClickTab} from '../../actions/menuActions.js';
 import {LANDINGP_MENU, HOME_PATH} from '../constants.js';
 import {actionClickLang} from '../../actions/languageAction.js';
-import Typist from 'react-typist';
+import Typist from 'react-typist-updated';
 
 
 class LandingPage extends Component {
 	constructor(props) {
 			super(props);
-			this.state = {content: ""
+			this.state = {cursorP1: false
 									 };
 	}//end of constructor
 	//functions that update states
-	updateContent = (content) => {
-		this.setState({content});
+	updateCursorP1 = (cursorP1) => {
+		this.setState({cursorP1});
 	}
 
 	componentDidMount(){
@@ -26,7 +26,7 @@ class LandingPage extends Component {
 
 	render() {
 		const {currentLanguage} = this.props.currentLanguage;
-		const { content } = this.state;
+		const { cursorP1 } = this.state;
 
 
 
@@ -39,39 +39,38 @@ class LandingPage extends Component {
 
 
 										<h2 className="typer">
-											<Typist className="typer" cursor={{ show: true, hideWhenDone: true, element: '_' }}>
+											<Typist className="typer" avgTypingSpeed={0}
+											        cursor={{ show: false, hideWhenDone: true, element: '_' }}>
 													Hi, my name is Sara.
 											</Typist>
 										</h2>
 
-						        <p className="typer p1">
-												<Typist className="typer" cursor={{ show: true, element: '_', hideWhenDone: true }}>
-													<Typist.Delay ms={2900} />
-													I am a web developer. Welcome to my
+						        <div className="parag typer p1">
+												<Typist className="typer" avgTypingSpeed={0}
+												        cursor={{ show: false, element: '_', hideWhenDone: true }}>
+													<Typist.Delay ms={2700} />
+													  I am a web developer. Welcome
 								      	</Typist>
-										</p>
-										<p className="typer p2">
-												<Typist className="typer" cursor={{ show: true, element: '_', hideWhenDone: true }}>
-													<Typist.Delay ms={6200} />
-														portfolia page! Here you can check out my
+										</div>
+										<div className="parag typer p2">
+												<Typist className="typer" avgTypingSpeed={0}
+												        cursor={{ show: false, element: '_', hideWhenDone: true }}>
+													<Typist.Delay ms={4900} />
+														to my portfolia page!
 								      	</Typist>
-										</p>
-										<p className="typer p3">
-												<Typist className="typer" cursor={{ show: true, element: '_' }}>
-													<Typist.Delay ms={10000} />
-														skills, education and experience.
-								      	</Typist>
-										</p>
+										</div>
 
 									<div className="Language">
 										  <Link to={HOME_PATH}>
-													<div className={(currentLanguage === "swe") ? "Swedish SweCurrent" : "Swedish"}
+													<div className="BtnLang"
 													     onClick={() => this.langClick("swe")}>
+															 english
 												  </div>
 											</Link>
 											<Link to={HOME_PATH}>
-													<div className={(currentLanguage === "eng") ? "English EngCurrent" : "English"}
+													<div className="BtnLang"
 													     onClick={() => this.langClick("eng")}>
+															 swedish
 													</div>
 											</Link>
 								  </div>

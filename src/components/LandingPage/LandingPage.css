@@ -29,7 +29,7 @@
   margin: 0 auto;
 }
 .LandingPage h2 {
-  width: 260px;
+  width: 243px;
   margin: 0 auto;
   color: #cacaca;
   text-align: left;
@@ -37,24 +37,23 @@
   font-weight: 700;
   font-family: 'LatoBold', 'Open Sans', sans-serif;
   text-decoration: none;
+  padding-left: 5px;
 }
 
-.LandingPage p {
+.LandingPage .parag {
+  padding-left: 5px;
   color: #8a8a8a;
   margin: 0 auto;
   text-align: left;
-  font-family: 'GothamLightRegular';
+  font-family: 'Lato';
   font-size: 1rem;
   letter-spacing: .1rem;
 }
 .LandingPage .p1 {
-  width: 372px;
+  width: 302px;
 }
 .LandingPage .p2 {
-  width: 420px;
-}
-.LandingPage .p3 {
-  width: 317px;
+  width: 207px;
 }
 
 /*Typer animation*/
@@ -76,6 +75,7 @@
   100% { opacity: 1; }
   }
 
+
 /*Language Section styles*/
   .Language {
     display: inline-flex;
@@ -85,29 +85,32 @@
     margin-top: 30px;
     width: 100%;
     margin-right: 0;
+    animation-name: lang;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes lang {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
   .Language div {
-    width: 40px;
+    width: 100px;
     height: 26px;
     background-position: center center;
     background-size: cover;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   }
-  .Language .Swedish {
+  .BtnLang {
     margin-right: 10px;
     border: 1px solid #354b4e;
-    background-image: linear-gradient(
-          rgba(16, 4, 28, 0.5),
-          rgba(16, 4, 28, 0.5)
-        ),
-        url(/img/swe.png);
   }
-  .Language .Swedish:hover {
-    background-image: linear-gradient(
-          rgba(16, 4, 28, 0.1),
-          rgba(16, 4, 28, 0.1)
-        ),
-        url(/img/swe.png);
+  .BtnLang:hover {
+
   }
   .Language .English {
     border: 1px solid #354b4e;
