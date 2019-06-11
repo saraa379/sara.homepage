@@ -107,25 +107,16 @@
   }
   .BtnLang {
     margin-right: 10px;
-    border: 1px solid #354b4e;
+    border: 1px solid #F0F0F0;
+    border-radius: 5px;
+    color: #F0F0F0;
+  }
+  .Language a {
+    text-decoration: none;
   }
   .BtnLang:hover {
-
-  }
-  .Language .English {
-    border: 1px solid #354b4e;
-    background-image: linear-gradient(
-          rgba(16, 4, 28, 0.5),
-          rgba(16, 4, 28, 0.5)
-        ),
-        url(/img/eng.png);
-  }
-  .Language .English:hover {
-    background-image: linear-gradient(
-          rgba(16, 4, 28, 0.1),
-          rgba(16, 4, 28, 0.1)
-        ),
-        url(/img/eng.png);
+      background-color: #F0F0F0;
+      color: black;
   }
 
 
@@ -133,32 +124,31 @@
 @media (max-width: 480px) {
   .LandingPage .circle {
     height: 250px;
-    width: 250px;
+    width: 90%;
   }
-  .LandingPage h1 {
-    font-size: 1.2rem;
+  .LandingPage h2 {
+    font-size: 1.3rem;
   }
   .LandingPage p {
     font-size: 0.7rem;
   }
-  .Language div {
-    width: 28px;
-    height: 18px;
+  .LandingPage .text {
+    width: 100%;
   }
 }
 @media (max-width: 300px) {
-  .LandingPage .circle {
-    height: 200px;
-    width: 200px;
-  }
-  .LandingPage h1 {
-    font-size: 0.9rem;
+
+  .LandingPage h2 {
+    font-size: 1.2rem;
   }
   .LandingPage p {
     font-size: 0.5rem;
   }
-  .Language div {
-    width: 22px;
-    height: 15px;
+  .Language {
+    flex-flow: column nowrap;
   }
+  .Language a:first-child {
+    margin-bottom:  10px;
+  }
+
 }

@@ -23,6 +23,10 @@ class LandingPage extends Component {
 		this.props.actionClickTab(LANDINGP_MENU);
 	}
 
+	langClick = (lang) => {
+		this.props.actionClickLang(lang);
+	}
+
 
 	render() {
 		const {currentLanguage} = this.props.currentLanguage;
