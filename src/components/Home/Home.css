@@ -8,10 +8,10 @@
   background-size: cover;
   background-attachment: fixed;
   background-image: linear-gradient(
-        rgba(10, 69, 220, 0.2),
-        rgba(10, 69, 220, 0.2)
+        rgba(24, 24, 24, 0.7),
+        rgba(24, 24, 24, 0.7)
       ),
-      url(/img/space3.jpg);
+      url(/img/city1.jpg);
   display: flex;
   justify-content: center;
   align-items: center;

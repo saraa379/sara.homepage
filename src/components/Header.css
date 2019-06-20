@@ -1,5 +1,5 @@
 header {
-    background-color:  	#181818;
+    background-color: transparent;
     display: flex;
     position: fixed;
     flex-flow: row nowrap;
@@ -22,5 +22,3 @@ header {
       width: 25px;
       height: 25px;
     }
-
-  

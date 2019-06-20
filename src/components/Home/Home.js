@@ -9,6 +9,7 @@ class Home extends Component {
 	componentDidMount(){
 		this.props.actionClickTab(HOME_MENU);
 	}
+	
 	render() {
 		const {currentLanguage} = this.props.currentLanguage;
 		console.log("Current language in home: " + currentLanguage);
