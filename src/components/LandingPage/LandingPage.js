@@ -67,13 +67,13 @@ class LandingPage extends Component {
 									<div className="Language">
 										  <Link to={HOME_PATH}>
 													<div className="BtnLang"
-													     onClick={() => this.langClick("swe")}>
+													     onClick={() => this.langClick("eng")}>
 															 english
 												  </div>
 											</Link>
 											<Link to={HOME_PATH}>
 													<div className="BtnLang"
-													     onClick={() => this.langClick("eng")}>
+													     onClick={() => this.langClick("swe")}>
 															 swedish
 													</div>
 											</Link>

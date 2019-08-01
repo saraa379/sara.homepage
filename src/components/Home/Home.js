@@ -9,7 +9,7 @@ class Home extends Component {
 	componentDidMount(){
 		this.props.actionClickTab(HOME_MENU);
 	}
-	
+
 	render() {
 		const {currentLanguage} = this.props.currentLanguage;
 		console.log("Current language in home: " + currentLanguage);
@@ -19,12 +19,14 @@ class Home extends Component {
 
 					<div className={(currentLanguage === "swe") ? "HomeWrap HomeSwe" : "displayNone"}>
 							<div className="Hero">
-							home swe
+								home swe
 							</div>
 					</div>
 
 				 	<div className={(currentLanguage === "eng") ? "HomeWrap HomeEng" : "displayNone"}>
-							Home eng
+							<div className="Hero">
+								home eng
+							</div>
 					</div>
 
 			</div>

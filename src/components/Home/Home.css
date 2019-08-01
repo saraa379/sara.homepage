@@ -1,3 +1,9 @@
+/*Outmost container & general styles*/
+.HomeWrap {
+  font-family: 'GothamLightRegular', 'Open Sans', sans-serif;
+  width: 100%;
+}
+
 /*Hero styles*/
 .HomeWrap .Hero {
   background-color: #2a2a2a;
@@ -8,10 +14,10 @@
   background-size: cover;
   background-attachment: fixed;
   background-image: linear-gradient(
-        rgba(24, 24, 24, 0.7),
-        rgba(24, 24, 24, 0.7)
+        rgba(24, 24, 24, 0),
+        rgba(24, 24, 24, 0)
       ),
-      url(/img/city1.jpg);
+      url(/img/home4.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
