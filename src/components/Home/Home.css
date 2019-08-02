@@ -2,6 +2,7 @@
 .HomeWrap {
   font-family: 'GothamLightRegular', 'Open Sans', sans-serif;
   width: 100%;
+  z-index: 1;
 }
 
 /*Hero styles*/
@@ -17,7 +18,7 @@
         rgba(24, 24, 24, 0),
         rgba(24, 24, 24, 0)
       ),
-      url(/img/home4.jpg);
+      url(/img/home7.jpg);
   display: flex;
   justify-content: center;
   align-items: center;

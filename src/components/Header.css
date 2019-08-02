@@ -1,14 +1,15 @@
 header {
-    background-color: transparent;
+    background-color: black;
     display: flex;
     position: fixed;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     color: white;
-    height: 35px;
+    height: 45px;
     width: 100%;
-    z-index: 11;
+    z-index: 10;
+    opacity: 0.5;
 }
 /*Logo section styles*/
   .Logo {
@@ -16,9 +17,16 @@ header {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    color: #00FA9A;
+    padding-left: 7px;
+    padding-right: 7px;
   }
-    .Logo img {
-      margin: 0 3px 0 10px;
-      width: 25px;
-      height: 25px;
+
+  /*Language section styles*/
+    .LangHeader {
+      display: inline-flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      color: white;
     }

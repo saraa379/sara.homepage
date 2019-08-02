@@ -32,9 +32,9 @@ class Header extends Component {
 		return (
 			<header className={(currentTab !== "landingpage") ? "Header" : "displayNone"}>
 						<div className="Logo">
-								<img src='/img/logo-sh2.jpg' alt="Logo" />
+								Sarantsetseg Hedenfalk
 						</div>
-						<div className="Language">
+						<div className="LangHeader">
 								<div className={(currentLang === "swe") ? "Swedish SweCurrent" : "Swedish"}
 										 onClick={() => this.langClick("swe")}></div>
 								<div className={(currentLang === "eng") ? "English EngCurrent" : "English"}
